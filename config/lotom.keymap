@@ -6,26 +6,6 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 
 / {
-    macros {
-        dummy1: dummy1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp P &kp U &kp K &kp U &kp NUMBER_1 &kp NUMBER_4 &kp NUMBER_7 &kp NUMBER_0>;
-        };
-
-        dummy2: dummy2 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(P) &kp A &kp S &kp S &kp W &kp O &kp R &kp D &kp NUMBER_1>;
-        };
-
-        dummy3: dummy3 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(K) &kp O &kp H &kp E &kp I &kp DOT &kp C &kp M &kp N &kp C &kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_0 &kp NUMBER_1>;
-        };
-    };
-
     behaviors {
       scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
           compatible = "zmk,behavior-sensor-rotate";
@@ -95,9 +75,9 @@
         ARROW {
             bindings = <
 &trans                                                                                                                                                                                 &trans
-&kp GRAVE  &kp LC(LS(TAB))         &kp LG(RIGHT)   &kp NUMBER_9             &kp NUMBER_0       &trans      &trans  &dummy1  &kp RC(LEFT_ARROW)  &kp UP_ARROW      &kp RC(RIGHT_ARROW)  &kp LG(P)
-&kp TAB    &kp LA(LG(LEFT_ARROW))  &kp LG(LEFT)    &kp LG(LA(RIGHT_ARROW))  &kp LEFT_BRACKET   &trans      &trans  &dummy3  &kp LEFT_ARROW      &kp DOWN_ARROW    &kp RIGHT_ARROW      &kp LG(K)
-&kp LCMD   &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &kp RIGHT_BRACKET  &trans      &trans  &dummy2  &trans              &kp LC(UP_ARROW)  &trans               &kp LG(L)
+&kp GRAVE  &kp LC(LS(TAB))         &kp LG(RIGHT)   &kp NUMBER_9             &kp NUMBER_0       &trans      &trans  &trans  &kp RC(LEFT_ARROW)  &kp UP_ARROW      &kp RC(RIGHT_ARROW)  &kp LG(P)
+&kp TAB    &kp LA(LG(LEFT_ARROW))  &kp LG(LEFT)    &kp LG(LA(RIGHT_ARROW))  &kp LEFT_BRACKET   &trans      &trans  &trans  &kp LEFT_ARROW      &kp DOWN_ARROW    &kp RIGHT_ARROW      &kp LG(K)
+&kp LCMD   &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &kp RIGHT_BRACKET  &trans      &trans  &trans  &trans              &kp LC(UP_ARROW)  &trans               &kp LG(L)
 &trans     &trans                  &trans          &trans                   &trans             &trans      &trans  &trans                                         &trans               &trans
             >;
 
