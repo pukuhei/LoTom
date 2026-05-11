@@ -48,9 +48,9 @@
 
 ## キーマップについて
 
-- ZMKstudio にて確認・編集を行なってください
+- DYA Studio にて確認・編集を行なってください
 
-  - https://zmk.studio/
+  - https://studio.dya.cormoran.works/
 
 - ZMK keymap-editor も使用できます
   - マクロ設定などを使いたい場合はこちらを使うとべんりです

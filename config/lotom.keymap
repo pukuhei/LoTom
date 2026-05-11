@@ -2,24 +2,28 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
+#include <input/processors/runtime-input-processor.dtsi>
+#include <behaviors/runtime-sensor-rotate.dtsi>
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 
 / {
     behaviors {
       scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
-          compatible = "zmk,behavior-sensor-rotate";
+          compatible = "zmk,behavior-runtime-sensor-rotate";
           label = "ENCODER_MSC_DOWN_UP";
           #sensor-binding-cells = <0>;
-          bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+          cw-binding = <&msc SCRL_DOWN>;
+          ccw-binding = <&msc SCRL_UP>;
           tap-ms = <20>;
       };
 
       tab_slide: behavior_sensor_rotate_tab_slide {
-          compatible = "zmk,behavior-sensor-rotate";
+          compatible = "zmk,behavior-runtime-sensor-rotate";
           label = "ENCODER_TAB_SLIDE";
           #sensor-binding-cells = <0>;
-          bindings = <&kp LA(LG(RIGHT_ARROW))>, <&kp LA(LG(LEFT_ARROW))>;
+          cw-binding = <&kp LA(LG(RIGHT_ARROW))>;
+          ccw-binding = <&kp LA(LG(LEFT_ARROW))>;
           tap-ms = <20>;
       };
     };
@@ -123,7 +127,7 @@
 &kp LG(Q)      &kp LC(W)  &trans     &trans     &trans  &trans      &trans  &bt BT_PRV  &bt BT_NXT  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 &kp LG(LS(Z))  &trans     &kp LC(C)  &trans     &trans  &trans      &trans  &trans      &trans      &trans        &trans        &trans
 &kp LG(Z)      &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans  &trans      &trans  &trans      &trans      &trans        &trans        &trans
-&trans         &trans     &trans     &trans     &trans  &trans      &trans  &trans                                &trans        &trans
+&studio_unlock &trans     &trans     &trans     &trans  &trans      &trans  &trans                                &trans        &trans
             >;
 
             sensor-bindings = <
