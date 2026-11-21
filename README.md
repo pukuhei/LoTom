@@ -10,6 +10,13 @@
 - 購入後のセットアップ
   - https://frequent-breeze-833.notion.site/LoTom-2ace518048a380438cd8c65c32c07ce9
 
+## ケースデータ
+- LoTom は基板のみの販売です。ケース・プレートなどのパーツは各自でご用意ください
+- ケース・スイッチプレート・トップカバー・トラックボールホルダー・ホイールなどの 3D データは [`case/`](case/) にあります
+  - 印刷用 STL: [`case/stl/`](case/stl/)
+  - CAD 用 STEP: [`case/step/`](case/step/)
+  - パーツ一覧と注意点は [`case/README.md`](case/README.md) を見てください
+
 ## スペック
 - ファームウェア
   - ZMK を使用しています
