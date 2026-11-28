@@ -24,6 +24,7 @@ LoTom は基板のみの販売です。ケースやプレートなどはこの�
 | トップカバー 左 | `stl/lotom_cover_L.stl` | `step/lotom_cover_L.step` | 77.1 × 20.0 × 6.0 | マイコン部のカバー |
 | トップカバー 右 | `stl/lotom_cover_R.stl` | `step/lotom_cover_R.step` | 77.1 × 20.0 × 6.0 | マイコン部のカバー |
 | トラックボールホルダー | `stl/lotom_trackball_holder.stl` | `step/lotom_trackball_holder.step` | 31.9 × 16.5 × 18.0 | 19mm ボール用 |
+| トラックボールジョイント (CNC 版) | `stl/lotom_trackball_joint_cnc_R.stl` | `step/lotom_trackball_joint_cnc_R.step` | 31.9 × 18.0 × 5.5 | CNC 版の右トップ用 |
 | サイドホイール | `stl/lotom_wheel_side.stl` | `step/lotom_wheel_side.step` | 30.0 × 30.0 × 5.0 | 左手サイドのスライドロータリー用 |
 | ボトムホイール | `stl/lotom_wheel_bottom.stl` | `step/lotom_wheel_bottom.step` | 38.0 × 38.0 × 5.0 | 左手下側のスライドロータリー用 |
 | スイッチノブ | `stl/lotom_switch_knob.stl` | `step/lotom_switch_knob.step` | 7.5 × 6.8 × 4.3 | スイッチのつまみ |
@@ -31,6 +32,7 @@ LoTom は基板のみの販売です。ケースやプレートなどはこの�
 - 単位は mm、Z が上です
 - 各パーツは X/Y の中心が原点、一番低い面が Z=0 です
 - ケースとプレートは底面が下の向きで入っています
+- トラックボールジョイント (CNC 版) は、元データ (Y が上) を X 軸まわりに 90° 回して Z が上にしています。形は変えていません
 
 ## STEP について
 
